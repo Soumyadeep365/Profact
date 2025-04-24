@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Exo", serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 12px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
+.navbar .box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+.navbar .ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    padding-left: 90px;
+}
+.navbar ul a{
+    color: #36444F;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.navbar .log{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16.5px 46.5px;
+    background-color: #1B75BB;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.navbar .log:hover{
+    background-color: #116fb7;
+    color: #ffffff;
+}
+.navbar .box ul li a:hover{
+    color: #1B75BB;
+    font-weight: 700;
+}
+.navbar .box ul li .active{
+    color: #1B75BB;
+    font-weight: 700;
+    border-bottom: 2px solid #1B75BB;
+}
+
+.main .effect{
+    position: relative;
+}
+.main .effect img{
+    position: absolute;
+}
+.main .effect .p1{
+    left: -85px;
+    top: -960px;
+    z-index: -1;
+}
+.main .effect .p2{
+    left: 150px;
+    top: -665px;
+    z-index: -1;
+}
+.main .effect::before{
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    width: 258.25px;
+    height: 258.25px;
+    right: -65px;
+    top: -780px;
+    background: #00B3FF;
+    z-index: -1;
+    filter: blur(277px);
+}
+
+.main .part1{
+    border-bottom: 1px solid #F2F3F3;
+}
+.main .part1 .container .inner{
+    padding-top: 150px;
+}
+.main .part1 .container .inner .sec1{
+    margin-bottom: 100px;
+}
+.main .part1 .container .inner .sec1 .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .part1 .container .inner .sec1 .head h2{
+    font-size: 56px;
+    color: #0F1820;
+    font-weight: 600;
+    padding-right: 20px;
+}
+.main .part1 .container .inner .sec1 .para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.main .part1 .container .inner .sec1 .para .p{
+    text-decoration: none;
+    font-size: 18px;
+    color: #36444F;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 19px;
+    cursor: pointer;
+}
+.main .part1 .container .inner .sec1 .para a{
+    text-decoration: none;
+    color: #1B75BB;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.main .part2{
+    margin: 100px 0;
+}
+.main .part2 .container .inner .sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .part2 .container .inner .sec .box{
+    padding: 15px 0;
+    margin-right: 20px;
+}
+.main .part2 .container .inner .sec .box img{
+    height: 331px;
+    width: 358px;
+    padding-bottom: 10px;
+}
+.main .part2 .container .inner .sec .box .anch{
+    background-color: #E5EFF6;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0384D0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main .part2 .container .inner .sec .box p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0F1820;
+    line-height: 33px;
+}
+
+.main .part3 .container .inner .sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px -30px;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+.main .part3 .container .inner .sec:hover{
+    box-shadow: 0px 0px 50px 10px #c1c7fff0;
+}
+.main .part3 .container .inner .sec .write{
+    padding: 0 40px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.main .part3 .container .inner .sec .write h5{
+    font-size: 56px;
+    color: #ffffff;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-right: 100px;
+}
+.main .part3 .container .inner .sec .write p{
+    font-size: 18px;
+    color: #DEEDFD;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+.main .part3 .container .inner .sec .write .omg1{
+    background-color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #0F1820;
+    margin-right: 15px;
+}
+.main .part3 .container .inner .sec .write .omg1:hover{
+    background-color: #dcdcdc;
+}
+.main .part3 .container .inner .sec .write .omg1 img{
+    height: 24px;
+    width: 21.63;
+    padding-right: 15px;
+}
+.main .part3 .container .inner .sec .write .omg2{
+    background-color: #0F1820;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #ffffff;
+}
+.main .part3 .container .inner .sec .write .omg2:hover{
+    background-color: #152431;
+}
+.main .part3 .container .inner .sec .write .omg2 img{
+    height: 24px;
+    width: 21.63;
+    padding-right: 15px;
+}
+.main .part3 .container .inner .sec .spl{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer{
+    border-top: 2px solid #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+    padding-top: 115px;
+    padding-bottom: 90px;
+    margin-bottom: 40px;
+}
+.footer .container .ptr .sec .first {
+    display: flex;
+    align-items: center;
+}
+.footer .container .ptr .sec .first .para {
+    margin-left: 50px;
+}
+.footer .container .ptr .sec .first .para .para_out {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container .ptr .sec .first .para h5 {
+    font-size: 19px;
+    color: #0F1820;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.footer .container .ptr .sec .first .ima {
+    margin-top: -25px;
+    width: 355px;
+}
+.footer .container .ptr .sec .first .ima img {
+    padding-bottom: 30px;
+}
+.footer .container .ptr .sec .first p {
+    font-size: 14px;
+    color: #36444F;
+    font-weight: 400;
+    line-height: 29px;
+}
+.footer .container .ptr .sec .first .para .para_out .para_in {
+    padding-right: 45px;
+}
+.footer .container .ptr .sec .first .para .para_out .para_in a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #36444F;
+    font-weight: 400;
+}
+.footer .container .ptr .sec .first .para .para_out .para_in a:hover{
+    color: #1B75BB;
+    font-weight: 700;
+}
+.footer .container .ptr .sec .first .anc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.footer .container .ptr .sec .first .anc .omg1 {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #1B75BB;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    margin-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+.footer .container .ptr .sec .first .anc .omg1:hover {
+    background-color: #116fb7;
+    box-shadow: 0 0 20px #00cefcab;
+}
+.footer .container .ptr .sec .first .anc .omg1 img {
+    height: 22px;
+    width: 25px;
+    padding-right: 10px;
+}
+.footer .container .ptr .sec .first .anc .omg2 {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #0F1820;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.footer .container .ptr .sec .first .anc .omg2:hover {
+    background-color: #152431;
+    box-shadow: 0 0 40px #00cefcab;
+}
+.footer .container .ptr .sec .first .anc .omg2 img {
+    height: 22px;
+    width: 25px;
+    padding-right: 10px;
+}
